@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     
     @GetMapping("/demo")
-    public String home() {
+    public String demo() {
         System.out.println("success");
         return "success";
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "This is to check get requests";
     }
 }
